@@ -19,7 +19,12 @@ h4 {
 }
 
 .header {
-  background-color: #f7f6f1;
+  background-image: url('images/background.jpg');
   padding-bottom: 20px;
   margin-bottom: 10 px;
+  color: #fff;
+}
+
+.header a {
+ color: #fff;
 }
