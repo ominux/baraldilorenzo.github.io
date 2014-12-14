@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Personal website of Lorenzo Baraldi, PhD sudent at Unimore.">
+	<meta name="author" content="Lorenzo Baraldi">
     <title>Lorenzo Baraldi</title>
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script>
@@ -37,6 +40,7 @@
             <ul class="list-unstyled">
               <li>Email: <a href="mailto:baraldi.lorenzo(at)gmail(dot)com">baraldi.lorenzo (at) gmail (dot) com</a></li>
               <li>Curriculum: <a href="curriculum.pdf">C.V.</a></li>
+			  <li><a href="https://twitter.com/lorenzo_baraldi" class="icon"><i class="fa fa-twitter fa-lg"></i></a>&nbsp;<a href="http://it.linkedin.com/pub/lorenzo-baraldi/83/164/8b" class="icon"><i class="fa fa-linkedin fa-lg"></i></a></li>
             </ul>
           </div>
         </div>
@@ -54,9 +58,9 @@
         </div>
         <div class="col-md-9">
           <h4>Gesture Recognition in Ego-Centric Videos using Dense Trajectories and Hand Segmentation</h4>
-          <h5>L. Baraldi, F. Paci, G. Serra, L. Benini, R. Cucchiara, Embedded Vision Workshop CVPR 2014 [<a href="papers/evw14.pdf">PDF</a>]</h5>
+          <h5>L. Baraldi, F. Paci, G. Serra, L. Benini, R. Cucchiara, Embedded Vision Workshop CVPR 2014</h5>
           <p>We present a novel method for monocular hand gesture recognition in ego-vision scenarios that deals with static and dynamic gestures and can achieve high accuracy results using a few positive samples. Specifically, we use and extend the dense trajectories approach that has been successfully introduced for action recognition. Dense features are extracted around regions selected by a new hand segmentation technique that integrates superpixel classification, temporal and spatial coherence. We extensively test our gesture recognition and segmentation algorithms on public datasets and propose a new dataset shot with a wearable camera. In addition, we demonstrate that our solution can work in near real-time on a wearable device.</p>
-          [<a href="http://imagelab.ing.unimore.it/files/ego_virtualmuseum.zip">Dataset</a>]
+          <a href="papers/evw14.pdf"><button type="button" class="btn btn-primary btn-sm">PDF</button></a> <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#VideoGR">Video</button> <a href="http://imagelab.ing.unimore.it/files/ego_virtualmuseum.zip"><button type="button" class="btn btn-default btn-sm">Dataset</button></a>
         </div>
       </div>
       <hr>
@@ -66,9 +70,9 @@
         </div>
         <div class="col-md-9">
           <h4>Hand Segmentation for Gesture Recognition in EGO-Vision</h4>
-          <h5>G. Serra, M. Camurri, L. Baraldi, M. Benedetti, R. Cucchiara, IMMPD, 2013 [<a href="papers/immpd13.pdf">PDF</a>]</h5>
+          <h5>G. Serra, M. Camurri, L. Baraldi, M. Benedetti, R. Cucchiara, IMMPD, 2013</h5>
           <p>We provide a hand segmentation algorithm based on Random Forest superpixel classification that integrates light, time and space consistency. We also propose a gesture recognition method based Exemplar SVMs since it requires a only small set of positive sampels, hence it is well suitable for the egocentric video applications. Furthermore, this method is enhanced  by using segmented images instead of full frames during test phase. Experimental results show that our hand segmentation algorithm outperforms the state-of-the-art approaches and improves the gesture recognition accuracy.</p>
-          [<a href="http://vimeo.com/78178993">Video</a>]
+          <a href="papers/immpd13.pdf"><button type="button" class="btn btn-primary btn-sm">PDF</button></a> <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#VideoHS">Video</button>
         </div>
       </div>
       <div class="row">
@@ -106,6 +110,34 @@
         </div>
       </footer>
     </div>
+	
+	<div class="modal fade" id="VideoGR" tabindex="-1" role="dialog" aria-labelledby="VideoGRLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="VideoGRLabel">Gesture Recognition in Ego-Vision</h4>
+				</div>
+				<div class="modal-body">
+					<div class="video"><iframe src="http://player.vimeo.com/video/107716179?autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="VideoHS" tabindex="-1" role="dialog" aria-labelledby="VideoHSLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="VideoHSLabel">Hand Segmentation in Ego-Vision</h4>
+				</div>
+				<div class="modal-body">
+					<div class="video"><iframe src="http://player.vimeo.com/video/78178993?autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+				</div>
+			</div>
+		</div>
+	</div>	
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
   </body>

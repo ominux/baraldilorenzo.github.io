@@ -23,3 +23,19 @@ h4 {
   padding-bottom: 20px;
   margin-bottom: 10 px;
 }
+
+.video {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 60px; overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
